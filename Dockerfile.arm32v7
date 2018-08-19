@@ -4,6 +4,4 @@ WORKDIR /usr/src/shitpostd
 COPY ./requirements.txt ./shitpostd.py ./
 
 RUN pip install -r requirements.txt
-
-EXPOSE 8080
 CMD ["python", "shitpostd.py"]

@@ -1,6 +1,6 @@
 # shitpostd
 
-Bot that shitposts in response to everything it sees.
+Bot that shitposts in response to everything it sees. It ignores messages in threads so you can have an actual conversatio near it.
 
 ## Building
 

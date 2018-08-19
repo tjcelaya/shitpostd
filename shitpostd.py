@@ -1,5 +1,6 @@
 from os import environ
 from sys import exit
+from random import randint
 import time
 import re
 from slackclient import SlackClient
@@ -29,7 +30,8 @@ def is_chatter_and_not_us(e):
             and 'type' in e 
             and e['type'] == 'message' 
             and 'user' in e 
-            and e['user'] != USER_ID)
+            and e['user'] != USER_ID
+            and 'thread_ts' not in e)
 
 def build_shitpost(words):
     """

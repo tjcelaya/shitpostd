@@ -1,0 +1,4 @@
+Dockerfile
+.git
+bin
+__pycache__
